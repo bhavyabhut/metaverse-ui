@@ -72,17 +72,21 @@ export const socials = [
   {
     name: 'twitter',
     url: '/twitter.svg',
+    link: 'https://twitter.com/BhutBhavya',
   },
   {
     name: 'linkedin',
     url: '/linkedin.svg',
+    link: 'https://www.linkedin.com/in/bhavya-bhut/',
   },
   {
     name: 'instagram',
     url: '/instagram.svg',
+    link: 'https://github.com/bhavyabhut',
   },
   {
     name: 'facebook',
     url: '/facebook.svg',
+    link: 'https://www.facebook.com/bhavybhut33',
   },
 ];
