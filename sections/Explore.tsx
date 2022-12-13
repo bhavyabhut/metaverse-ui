@@ -14,6 +14,7 @@ const Explore = () => {
   return (
     <section className={`${styles.paddings}`} id='explore'>
       <motion.div
+        // @ts-ignore: Unreachable code error
         variants={staggerContainer}
         initial='hidden'
         whileInView='show'

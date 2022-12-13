@@ -1,9 +1,14 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { ReactNode } from 'react';
 import { textContainer, textVariant2 } from '../../utils/motion';
 
-export const TypingText = ({ title, textStyles }) => (
+type Props = {
+  title: string;
+  textStyles?: string;
+};
+export const TypingText = ({ title, textStyles }: Props) => (
   <motion.p
     variants={textContainer}
     className={`font-normal text-[14px] text-secondary-white ${textStyles}`}
@@ -15,8 +20,11 @@ export const TypingText = ({ title, textStyles }) => (
     ))}
   </motion.p>
 );
-
-export const TitleText = ({ title, textStyles }) => (
+type PropsTitleText = {
+  title: string | ReactNode;
+  textStyles?: string;
+};
+export const TitleText = ({ title, textStyles }: PropsTitleText) => (
   <motion.h2
     variants={textVariant2}
     initial='hidden'

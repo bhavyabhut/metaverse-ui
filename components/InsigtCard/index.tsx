@@ -4,7 +4,14 @@ import { motion } from 'framer-motion';
 
 import { fadeIn } from '../../utils/motion';
 
-const InsightCard = ({ imgUrl, title, subtitle, index }) => (
+type Props = {
+  title: string;
+  index: number;
+  imgUrl: string;
+  subtitle: string;
+};
+
+const InsightCard = ({ imgUrl, title, subtitle, index }: Props) => (
   <motion.div
     variants={fadeIn('up', 'spring', index * 0.5, 1)}
     className='flex md:flex-row flex-col gap-4'

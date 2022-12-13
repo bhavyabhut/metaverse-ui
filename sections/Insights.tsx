@@ -10,6 +10,7 @@ import { InsightCard, TitleText, TypingText } from '../components';
 const Insights = () => (
   <section className={`${styles.paddings} relative z-10`}>
     <motion.div
+      // @ts-ignore: Unreachable code error
       variants={staggerContainer}
       initial='hidden'
       whileInView='show'
